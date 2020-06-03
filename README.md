@@ -47,7 +47,7 @@ The example directory contains the following files:
 - zone.csv - example zone configuration
 - records.csv - example zone records configuration 
 - main.tf - example generated terraform configuration
-- zone-info.md - [example generated documentation set for zone](zone_info.md)
+- zone-info.md - [example generated documentation set for zone](example/zone_info.md)
 
 ---
 
