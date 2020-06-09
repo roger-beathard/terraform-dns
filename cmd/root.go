@@ -1,5 +1,5 @@
 /*
-Copyright © 2020 NAME HERE <EMAIL ADDRESS>
+Copyright © 2020 Roger V. Beathard
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -22,6 +22,11 @@ import (
 	"github.com/spf13/cobra"
 )
 
+var (
+	tfFileName string
+	mdFileName string
+)
+
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
 	Use:   "dns",
@@ -30,6 +35,7 @@ var rootCmd = &cobra.Command{
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
 	//	Run: func(cmd *cobra.Command, args []string) { },
+
 }
 
 // Execute adds all child commands to the root command and sets flags appropriately.
@@ -39,4 +45,9 @@ func Execute() {
 		fmt.Println(err)
 		os.Exit(1)
 	}
+}
+
+func init() {
+	rootCmd.PersistentFlags().StringVar(&tfFileName, "tfFile", "main.tf", "generated terraform file. (main.tf)")
+	rootCmd.PersistentFlags().StringVar(&mdFileName, "mdFile", "zone_info.md", "generated zone info markdown file. (zone_info.md)")
 }

@@ -1,0 +1,63 @@
+{
+  "DNSName": "roger-beathard.com",
+  "ProjectID": "my-dns-279215",
+  "Description": "zone file for roger-beathard.com",
+  "DNSRecords": [
+    {
+      "HostName": "www",
+      "Type": "A",
+      "TTL": "300",
+      "RRDatas": "10.1.2.1",
+      "Description": "Default web entry point"
+    },
+    {
+      "HostName": "azure",
+      "Type": "TXT",
+      "TTL": "300",
+      "RRDatas": "v=spf1 ip4:111.111.111.111 include:backoff.example.com -all",
+      "Description": "Main home web service"
+    },
+    {
+      "HostName": "home-red",
+      "Type": "A",
+      "TTL": "300",
+      "RRDatas": "10.1.4.3",
+      "Description": "home-red web service"
+    },
+    {
+      "HostName": "home-green",
+      "Type": "A",
+      "TTL": "300",
+      "RRDatas": "10.1.4.3",
+      "Description": "home-green web service"
+    },
+    {
+      "HostName": "aweb",
+      "Type": "A",
+      "TTL": "300",
+      "RRDatas": "10.1.4.3",
+      "Description": "Main home web service"
+    },
+    {
+      "HostName": "apple",
+      "Type": "A",
+      "TTL": "300",
+      "RRDatas": "10.1.5.6",
+      "Description": "Main home web service"
+    },
+    {
+      "HostName": "home-lb",
+      "Type": "CNAME",
+      "TTL": "300",
+      "RRDatas": "home-red.rvbtech.com.",
+      "Description": "Main home web service"
+    },
+    {
+      "HostName": "home2",
+      "Type": "CNAME",
+      "TTL": "300",
+      "RRDatas": "home-red.vbtech.com.",
+      "Description": "Main home web service"
+    }
+  ]
+}
