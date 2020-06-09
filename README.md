@@ -1,8 +1,13 @@
-
 ## terraform-dns
 Generate GCP DNS terraform files from csv file using golang.
 
-------
+- [CSV or JSON - Does it matter?](#csv-or-json)
+  * [CSV Format](#csv-format)
+  * [JSON Format](#json-format)
+- [Example Directory](#example-directory)
+- [Program layout](#program-layout)
+
+-----
 
 **Purpose**
 
@@ -10,8 +15,9 @@ terraform code for managing DNS records can be daunting due to the fact that eac
 
 One of the other advantages is automatic creation of a documentation set that describes the DNS zone.
 
+----
 
-**CSV or JSON - Does it matter?**
+## CSV or JSON
 
 There are two ways to manage DNS zone information. It can either be managed in JSON or CSV format. I started the project using a set of csv files but moved over to json representation while keeping the csv implementation.
 
