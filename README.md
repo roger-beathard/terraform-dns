@@ -1,7 +1,7 @@
 ## terraform-dns
-Generate GCP DNS terraform files from csv file using golang.
+Generate GCP DNS terraform files from a text file.
 
-- [CSV or JSON - Does it matter?](#csv-or-json)
+- [CSV or JSON](#csv-or-json)
   * [CSV Format](#csv-format)
   * [JSON Format](#json-format)
 - [Example Directory](#example-directory)
